@@ -1,0 +1,527 @@
+{
+	"page": 1,
+	"next": "/titles/x/upcoming?page=2",
+	"entries": 10,
+	"results": [
+		{
+			"_id": "61e58c6aef99b1c54343e375",
+			"id": "tt10209920",
+			"primaryImage": {
+				"id": "rm882431489",
+				"width": 8200,
+				"height": 12300,
+				"url": "https://m.media-amazon.com/images/M/MV5BNjc5ZGQwNjMtNGI3NC00Yzg3LTk4MjktMDgwYTcyZDhhNmRmXkEyXkFqcGdeQXVyMjE2MzA5MDI@._V1_.jpg",
+				"caption": {
+					"plainText": "Alien Wars: Judgement Day (2024)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Alien Wars: Judgement Day",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Alien Wars: Judgement Day",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2024,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 29,
+				"month": 12,
+				"year": 2024,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58c9bd8f3c0931e43efb3",
+			"id": "tt10241858",
+			"primaryImage": {
+				"id": "rm2802394881",
+				"width": 1080,
+				"height": 1350,
+				"url": "https://m.media-amazon.com/images/M/MV5BYWVhZDkyMTEtODFhYy00ZGMyLWEyY2UtYTZlYjY4MTE2ODlmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+				"caption": {
+					"plainText": "Supa Team 4 (2023)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "TV Series",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "TV Series",
+				"id": "tvSeries",
+				"isSeries": true,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "tv",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": true,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Supa Team 4",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Supa Team 4",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 20,
+				"month": 7,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58cdc909c2ca78143fecd",
+			"id": "tt10284138",
+			"primaryImage": {
+				"id": "rm1836213248",
+				"width": 494,
+				"height": 740,
+				"url": "https://m.media-amazon.com/images/M/MV5BNzU0NWUxZjItNmZjNi00MmExLWEyZTYtYjc4MWY0NWNmODE0XkEyXkFqcGdeQXVyOTgzOTE0MDg@._V1_.jpg",
+				"caption": {
+					"plainText": "El Principe Rojo (2023)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "El Principe Rojo",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "El Principe Rojo",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 17,
+				"month": 9,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58cf6e1a8ddbd96440553",
+			"id": "tt10300398",
+			"primaryImage": null,
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Star Wars: New Jedi Order",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Star Wars: New Jedi Order",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2027,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 17,
+				"month": 12,
+				"year": 2027,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58cfd8a5a6a599f4408cf",
+			"id": "tt10305228",
+			"primaryImage": null,
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Creepers 'R Us",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Creepers 'R Us",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 22,
+				"month": 9,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58d98ef99b1c543442d6b",
+			"id": "tt10408218",
+			"primaryImage": {
+				"id": "rm3380222977",
+				"width": 1080,
+				"height": 1448,
+				"url": "https://m.media-amazon.com/images/M/MV5BNDY1ZDU2Y2QtZGQ2Mi00YTIwLTg2NjItOWJlNzMzNjc1ZGU2XkEyXkFqcGdeQXVyMTAxNTI3MTI1._V1_.jpg",
+				"caption": {
+					"plainText": "Pizzodyssey (2023)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Pizzodyssey",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Pizzodyssey",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 15,
+				"month": 7,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58de9a66e596423444171",
+			"id": "tt10461964",
+			"primaryImage": null,
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Finding Tess",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Finding Tess",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 15,
+				"month": 11,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58e44a66e596423445707",
+			"id": "tt10521010",
+			"primaryImage": {
+				"id": "rm4127568385",
+				"width": 792,
+				"height": 1080,
+				"url": "https://m.media-amazon.com/images/M/MV5BZWIyNzE3NzEtMGExNS00ZjRkLWJmMTYtMWFlNTNkNDgyNWUzXkEyXkFqcGdeQXVyODUwMzI5ODk@._V1_.jpg",
+				"caption": {
+					"plainText": "Dante Alighieri, Boris Acosta, and Dino Di Durante in The Divine Comedy: Inferno, Purgatory and Paradise (2023)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "TV Series",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "TV Series",
+				"id": "tvSeries",
+				"isSeries": true,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "tv",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": true,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "The Divine Comedy: Inferno, Purgatory and Paradise",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "The Divine Comedy: Inferno, Purgatory and Paradise",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 21,
+				"month": 9,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58e6b8a5a6a599f4461c3",
+			"id": "tt10545296",
+			"primaryImage": {
+				"id": "rm4044566273",
+				"width": 1946,
+				"height": 2878,
+				"url": "https://m.media-amazon.com/images/M/MV5BMGE1NWZkZGMtMjEzYi00NDUwLTgzNmYtMGY4ZDhjNWMxZjVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+				"caption": {
+					"plainText": "Rachel Zegler and Tom Blyth in The Hunger Games: The Ballad of Songbirds and Snakes (2023)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "The Hunger Games: The Ballad of Songbirds and Snakes",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "The Hunger Games: The Ballad of Songbirds and Snakes",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2023,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 17,
+				"month": 11,
+				"year": 2023,
+				"__typename": "ReleaseDate"
+			}
+		},
+		{
+			"_id": "61e58ea278c012aa34446beb",
+			"id": "tt10579986",
+			"primaryImage": {
+				"id": "rm878544897",
+				"width": 1217,
+				"height": 1792,
+				"url": "https://m.media-amazon.com/images/M/MV5BNDFmYWRhYmMtMDBiNS00OWZkLTk3ZmYtODMyZjdlMDFjNWNlXkEyXkFqcGdeQXVyNjA1NjIzMzQ@._V1_.jpg",
+				"caption": {
+					"plainText": "Mom's Coming (2024)",
+					"__typename": "Markdown"
+				},
+				"__typename": "Image"
+			},
+			"titleType": {
+				"displayableProperty": {
+					"value": {
+						"plainText": "",
+						"__typename": "Markdown"
+					},
+					"__typename": "DisplayableTitleTypeProperty"
+				},
+				"text": "Movie",
+				"id": "movie",
+				"isSeries": false,
+				"isEpisode": false,
+				"categories": [
+					{
+						"value": "movie",
+						"__typename": "TitleTypeCategory"
+					}
+				],
+				"canHaveEpisodes": false,
+				"__typename": "TitleType"
+			},
+			"titleText": {
+				"text": "Mom's Coming",
+				"__typename": "TitleText"
+			},
+			"originalTitleText": {
+				"text": "Mom's Coming",
+				"__typename": "TitleText"
+			},
+			"releaseYear": {
+				"year": 2024,
+				"endYear": null,
+				"__typename": "YearRange"
+			},
+			"releaseDate": {
+				"day": 24,
+				"month": 11,
+				"year": 2024,
+				"__typename": "ReleaseDate"
+			}
+		}
+	]
+}
