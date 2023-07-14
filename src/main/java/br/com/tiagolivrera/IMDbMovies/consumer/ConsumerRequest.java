@@ -1,4 +1,4 @@
-package br.com.tiagolivrera.IMDbMovies;
+package br.com.tiagolivrera.IMDbMovies.consumer;
 
 import java.io.IOException;
 import java.net.URI;
