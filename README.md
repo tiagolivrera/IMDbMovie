@@ -91,3 +91,35 @@ System.out.println(response.body());
 		}
 }
 ```
+## Dia 2
+Extrair informações a partir da resposta JSON.
+
+Dado o resultado que obtive da API, escolhi capturar os dados referentes ao título, url e data de lançamento. Existe várias formas de fazer esse tratamento, como o uso de bibliotecas que possibilitam o parsing de JSON, como o Gson ou o Jackson, mas para exercitar os fundamentos, escolhi utilizar os métodos da classe String, como indexOf e substring.
+
+### Problema
+Durante a extração dos dados, percebi que nem todos os filmes eram acompanhados por uma url correspondente, o que me obrigou a fazer uma validação simples. Exemplo:
+
+```java
+if (!entry.contains("\"url\":"))
+	url = null;
+else {
+	int urlStartIndex = entry.indexOf("\"url\":") + "\"url\":\"".length();
+	int urlEndIndex = entry.indexOf("\",", urlStartIndex);
+	url = entry.substring(urlStartIndex, urlEndIndex);
+}
+```
+Para auxiliar a captura de informações, criei uma classe POJO Movie, e depois do parse dos dados crio um objeto dessa classe e armazeno em uma lista, a ser impressa no console.
+
+```text
+Movie [title=Alien Wars: Judgement Day, url=https://m.media-amazon.com/images/M/MV5BNjc5ZGQwNjMtNGI3NC00Yzg3LTk4MjktMDgwYTcyZDhhNmRmXkEyXkFqcGdeQXVyMjE2MzA5MDI@._V1_.jpg, releaseDate=2024-12-29]
+Movie [title=Supa Team 4, url=https://m.media-amazon.com/images/M/MV5BYWVhZDkyMTEtODFhYy00ZGMyLWEyY2UtYTZlYjY4MTE2ODlmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg, releaseDate=2023-07-20]
+Movie [title=El Principe Rojo, url=https://m.media-amazon.com/images/M/MV5BNzU0NWUxZjItNmZjNi00MmExLWEyZTYtYjc4MWY0NWNmODE0XkEyXkFqcGdeQXVyOTgzOTE0MDg@._V1_.jpg, releaseDate=2023-09-17]
+Movie [title=Star Wars: New Jedi Order, url=null, releaseDate=2027-12-17]
+Movie [title=Creepers 'R Us, url=null, releaseDate=2023-09-22]
+Movie [title=Pizzodyssey, url=https://m.media-amazon.com/images/M/MV5BNDY1ZDU2Y2QtZGQ2Mi00YTIwLTg2NjItOWJlNzMzNjc1ZGU2XkEyXkFqcGdeQXVyMTAxNTI3MTI1._V1_.jpg, releaseDate=2023-07-15]
+Movie [title=Finding Tess, url=null, releaseDate=2023-11-15]
+Movie [title=The Divine Comedy: Inferno, Purgatory and Paradise, url=https://m.media-amazon.com/images/M/MV5BZWIyNzE3NzEtMGExNS00ZjRkLWJmMTYtMWFlNTNkNDgyNWUzXkEyXkFqcGdeQXVyODUwMzI5ODk@._V1_.jpg, releaseDate=2023-09-21]
+Movie [title=The Hunger Games: The Ballad of Songbirds and Snakes, url=https://m.media-amazon.com/images/M/MV5BMGE1NWZkZGMtMjEzYi00NDUwLTgzNmYtMGY4ZDhjNWMxZjVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg, releaseDate=2023-11-17]
+Movie [title=Mom's Coming, url=https://m.media-amazon.com/images/M/MV5BNDFmYWRhYmMtMDBiNS00OWZkLTk3ZmYtODMyZjdlMDFjNWNlXkEyXkFqcGdeQXVyNjA1NjIzMzQ@._V1_.jpg, releaseDate=2024-11-24]
+
+```
