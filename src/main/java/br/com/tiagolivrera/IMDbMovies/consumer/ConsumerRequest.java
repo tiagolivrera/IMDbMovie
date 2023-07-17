@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsumerRequest {
 
-	private static final String API_KEY = "";
+	private static final String API_KEY = "bd6da8fc11msh267a863ae03aba1p166aa0jsn250e2916fe94";
 	private static final String API_URL_UPCOMING = "https://moviesdatabase.p.rapidapi.com/titles/x/upcoming";
 	private static final String API_URL = "moviesdatabase.p.rapidapi.com";
 

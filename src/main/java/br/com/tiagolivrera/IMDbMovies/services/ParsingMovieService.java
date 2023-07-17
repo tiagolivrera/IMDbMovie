@@ -1,11 +1,12 @@
 package br.com.tiagolivrera.IMDbMovies.services;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import br.com.tiagolivrera.IMDbMovies.consumer.ConsumerRequest;
-import br.com.tiagolivrera.IMDbMovies.models.Movie;
+import br.com.tiagolivrera.IMDbMovies.models.MovieRecord;
 
 public class ParsingMovieService {
 
@@ -16,8 +17,9 @@ public class ParsingMovieService {
 		this.request = cr.getUpcomingMovies();
 	}
 
-	public List<Movie> getListMovies() {
-		List<Movie> listMovies = new ArrayList<Movie>();
+	public List<MovieRecord> getListMovies() {
+		// List<Movie> listMovies = new ArrayList<Movie>();
+		List<MovieRecord> listMovies = new ArrayList<MovieRecord>();
 
 		int startIndex = this.request.indexOf("\"results\":[{") + "\"results\":[{".length();
 		int endIndex = this.request.lastIndexOf("}]");
@@ -67,7 +69,8 @@ public class ParsingMovieService {
 				year = Integer.parseInt(entry.substring(yearStartIndex, yearEndIndex).trim());
 
 			}
-			listMovies.add(new Movie(title, url, day, month, year));
+			// listMovies.add(new Movie(title, url, day, month, year));
+			listMovies.add(new MovieRecord(title, url, LocalDate.of(year, month, day)));
 		}
 		return listMovies;
 	}
