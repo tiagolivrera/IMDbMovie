@@ -123,3 +123,65 @@ Movie [title=The Hunger Games: The Ballad of Songbirds and Snakes, url=https://m
 Movie [title=Mom's Coming, url=https://m.media-amazon.com/images/M/MV5BNDFmYWRhYmMtMDBiNS00OWZkLTk3ZmYtODMyZjdlMDFjNWNlXkEyXkFqcGdeQXVyNjA1NjIzMzQ@._V1_.jpg, releaseDate=2024-11-24]
 
 ```
+
+## Dia 3
+Modelando uma classe Movie.
+
+Com os dados oriundos da API, destaquei três dados interessantes: título, url da capa e data de lançamento. Com essas informações, podemos montar uma classe Movie com três propriedades, seguindo o paradigma Orientado a Objetos. Uma classe Movie poderia ser modelada na linguagem Java da seguinte forma:
+
+```java
+public class Movie {
+
+	private String title;
+	private String url;
+	private LocalDate releaseDate;
+
+	public Movie() {
+	}
+
+	public Movie(String title, String url, Integer day, Integer month, Integer year) {
+		this.title = title;
+		this.url = url;
+		this.releaseDate = LocalDate.of(year, month, day);
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public LocalDate getReleaseDate() {
+		return releaseDate;
+	}
+
+	public void setReleaseDate(LocalDate releaseDate) {
+		this.releaseDate = releaseDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Movie [title=" + title + ", url=" + url + ", releaseDate=" + releaseDate + "]";
+	}
+
+}
+```
+Em uma classe java padrão, geralmente temos propriedades ou atributos, um construtor padrão e métodos de controle e acesso do tipo get e set. No entanto, podemos perceber que a classe Movie não precisaria de um construtor padrão, dado que o instanciamos como meio para receber os dados. Da mesma forma, não precisamos de métodos set, pois uma vez criado o objeto, ele não será alterado. Isso possibilita que ao invés de utilizarmos uma classe comum, podemos criar um Record, um tipo de classe especial da linguagem Java onde todos os atributos derivados são finais e já implementa automaticamente métodos de leitura das propriedades. Então, reimplementando a classe Movie, temos uma estrutura da seguinte forma:
+
+```java
+public record MovieRecord(String title, String url, LocalDate releaseDate) {
+}
+```
+
+
+
