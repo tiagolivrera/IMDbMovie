@@ -183,5 +183,68 @@ public record MovieRecord(String title, String url, LocalDate releaseDate) {
 }
 ```
 
+## Dia 4
+Com a saída, gere uma página HTML a partir da lista de objetos que você já tem no seu código Java.
+
+Com os dados do dia anterior, é possível apresentá-los de forma visual usando uma página HTML. Hoje em dia há várias formas de fazer essa visualização, seja no projeto java usando JSF, em um projeto Spring Boot com Tymeleaf ou usando uma tecnologia a parte para o frontend, como React ou Angular. No entanto, optei por fazer um documento simples usando Writer da seguinte forma:
+
+```java
+public static void generate(List<MovieRecord> listMovies) {
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("movies.html"))) {
+			writer.write("<!DOCTYPE html>");
+			writer.newLine();
+			writer.write("<html>");
+			writer.newLine();
+			writer.write("<head>");
+			writer.newLine();
+			writer.write("<title>Lista de Filmes</title>");
+			writer.newLine();
+			writer.write("</head>");
+			writer.newLine();
+			writer.write("<body>");
+			writer.newLine();
+			writer.write("<h1>Lista de Filmes</h1>");
+			writer.newLine();
+			writer.write("<table>");
+			writer.newLine();
+			writer.write("<tr>");
+			writer.newLine();
+			writer.write("<th>Título</th>");
+			writer.newLine();
+			writer.write("<th>Capa</th>");
+			writer.newLine();
+			writer.write("<th>Data de Lançamento</th>");
+			writer.newLine();
+			writer.write("</tr>");
+			writer.newLine();
+			for (MovieRecord movie : listMovies) {
+				writer.write("<tr>");
+				writer.newLine();
+				writer.write("<td>" + movie.title() + "<td>");
+				writer.newLine();
+				if (movie.url() != null) {
+					writer.write("<td><img src=\"" + movie.url() + "\" alt=\"Capa do Filme\" width=\"500\" height=\"600\"></td>");
+					writer.newLine();
+				}
+				writer.write("<td>" + " Lançamento: " + movie.releaseDate().toString() + "</td>");
+				writer.newLine();
+				writer.write("</tr>");
+				writer.newLine();
+			}
+			writer.write("</table>");
+			writer.newLine();
+			writer.write("</body>");
+			writer.newLine();
+			writer.write("</html>");
+			writer.newLine();
+
+			System.out.println("Arquivo HTML gerado com sucesso!");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+```
+Dessa forma, o resultado final é uma página HTML estática com os dados dos filmes, referentes ao título, imagem da capa e a data de lançamento, que foram obtidos ao consumir a API.
+
 
 
