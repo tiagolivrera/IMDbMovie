@@ -8,9 +8,17 @@ import java.net.http.HttpResponse;
 
 public class ConsumerRequest {
 
-	private static final String API_KEY = "";
+	private String API_KEY;
 	private static final String API_URL_UPCOMING = "https://moviesdatabase.p.rapidapi.com/titles/x/upcoming";
 	private static final String API_URL = "moviesdatabase.p.rapidapi.com";
+
+	public ConsumerRequest() {
+		this.API_KEY = "";
+	}
+
+	public ConsumerRequest(String API_KEY) {
+		this.API_KEY = API_KEY;
+	}
 
 	public String getUpcomingMovies() throws IOException, InterruptedException {
 		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(API_URL_UPCOMING))

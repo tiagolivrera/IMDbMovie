@@ -17,6 +17,11 @@ public class ParsingMovieService {
 		this.request = cr.getUpcomingMovies();
 	}
 
+	public ParsingMovieService(String API_URL) throws IOException, InterruptedException {
+		ConsumerRequest cr = new ConsumerRequest(API_URL);
+		this.request = cr.getUpcomingMovies();
+	}
+
 	public List<MovieRecord> getListMovies() {
 		// List<Movie> listMovies = new ArrayList<Movie>();
 		List<MovieRecord> listMovies = new ArrayList<MovieRecord>();
