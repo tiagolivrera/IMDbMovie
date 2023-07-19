@@ -246,5 +246,21 @@ public static void generate(List<MovieRecord> listMovies) {
 ```
 Dessa forma, o resultado final é uma página HTML estática com os dados dos filmes, referentes ao título, imagem da capa e a data de lançamento, que foram obtidos ao consumir a API.
 
+## Dia 5
+Encapsular a chamada da API dentro de uma nova classe.
+
+Em grandes projetos, é comum fazer uma estrutura em camadas, onde recebemos e enviamos apenas as informações necessárias para o cliente. Por exemplo, nessa aplicação não faz sentido mostrar ao usuário como a página HTML é construída ou em como os dados estão sendo capturados, basta apenas receber a chave de acesso e obter a página HTML correspondente. Por isso, o método main foi alterado para funcionar da seguinte forma:
+
+```java
+public class App {
+	public static void main(String[] args) throws IOException, InterruptedException {
+		MovieController controller = new MovieController("<API_KEY>");
+		HTMLGenerator.generate(controller.getMovies());
+	}
+}
+```
+Dessa forma, ao encapsular o código do projeto, fica mais simples o entendimento, mais fácil de dar manutenção e fornecendo apenas o necesário do funcionamento da aplicação para o cliente.
+
+
 
 
